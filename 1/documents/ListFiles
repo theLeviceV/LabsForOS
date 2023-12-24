@@ -4,7 +4,10 @@
 .bash_logout
 .bashrc
 .config
-echo
+.git
+.gitconfig
 Labs
+.local
 .profile
+.ssh
 .sudo_as_admin_successful

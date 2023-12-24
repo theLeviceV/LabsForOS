@@ -1,4 +1,4 @@
 Script Name: a.sh
 Parameter 1: hello
-Parameter 2: hello
-The transmitted strings are equal.
+Parameter 2: world
+The transmitted strings are not equal.
