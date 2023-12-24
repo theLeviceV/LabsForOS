@@ -1,0 +1,13 @@
+   1: .
+   2: ..
+   3: .bash_history
+   4: .bash_logout
+   5: .bashrc
+   6: .config
+   7: .git
+   8: .gitconfig
+   9: Labs
+  10: .local
+  11: .profile
+  12: .ssh
+  13: .sudo_as_admin_successful
