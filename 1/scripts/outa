@@ -1,0 +1,4 @@
+Script Name: a.sh
+Parameter 1: hello
+Parameter 2: hello
+The transmitted strings are equal.
