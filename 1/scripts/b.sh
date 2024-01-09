@@ -22,16 +22,3 @@ if [ "$1" -gt "$2" ]; then
 else
     echo "The maximum of the transmitted integers is $2."
 fi
-
-# Repeat the script with the output of information to the file outb.
-# If the file already exists, it will be overwritten.
-# If it doesn't exist, it will be created.
-echo "Script Name: $0" > outb
-echo "Parameter 1: $1" >> outb
-echo "Parameter 2: $2" >> outb
-
-if [ "$1" -gt "$2" ]; then
-    echo "The maximum of the transmitted integers is $1." >> outb
-else
-    echo "The maximum of the transmitted integers is $2." >> outb
-fi

@@ -30,13 +30,3 @@ if [ "$4" -gt "$max" ]; then
     max=$4
 fi
 echo "The maximum of the transmitted integers is $max."
-
-# Repeat the script with the output of information to the file outc.
-# If the file already exists, it will be overwritten.
-# If it doesn't exist, it will be created.
-echo "Script Name: $0" > outc
-echo "Parameter 1: $1" >> outc
-echo "Parameter 2: $2" >> outc
-echo "Parameter 3: $3" >> outc
-echo "Parameter 4: $4" >> outc
-echo "The maximum of the transmitted integers is $max." >> outc

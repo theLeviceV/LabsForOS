@@ -16,16 +16,3 @@ if [ "$1" == "$2" ]; then
 else
     echo "The transmitted strings are not equal."
 fi
-
-# Repeat the script with the output of information to the file outa.
-# If the file already exists, it will be overwritten.
-# If it doesn't exist, it will be created.
-echo "Script Name: $0" > outa
-echo "Parameter 1: $1" >> outa
-echo "Parameter 2: $2" >> outa
-
-if [ "$1" == "$2" ]; then
-    echo "The transmitted strings are equal." >> outa
-else
-    echo "The transmitted strings are not equal." >> outa
-fi
