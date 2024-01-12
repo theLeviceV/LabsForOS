@@ -1,30 +1,42 @@
 #!/bin/bash
 
-# Compiler settings
-CC="gcc"
-CFLAGS="-o lab2"
+function reading_text_file() {
+    echo "Чтение содержимого текстового файла:"
+    echo "input.txt"
+    echo "-----------------------------------------"
+    cat input.txt
+    echo ""
+    echo "output.txt"
+    echo "-----------------------------------------"
+    cat output.txt
+}
 
-# Name of the source code file
-SRC="lab2.c"
+function adding_number() {
+    echo "Добавление в каждую строку файла номер строки и запись в другой файл:"
+    ./lab2
+}
 
-# Compile the source code
-echo "Compiling $SRC..."
-$CC $CFLAGS -o example $SRC
+function file_issuance() {
+    echo "Выдача в stdout имён файлов:"
+    ls | grep /*.txt
+}
 
-# Check if the compilation was successful
-if [ $? -eq 0 ]; then
-    echo "Compilation successful!"
-else
-    echo "Compilation failed."
-    exit 1
-fi
+while true; do
+    clear
+    echo "Выберите действие:"
+    echo "1) чтение содержимого текстового файла"
+    echo "2) добавление в каждую строку файла № строки и запись в другой файл"
+    echo "3) выдача в stdout имён файлов"
+    echo "q) Выход"
+    read -p "Введите свой выбор: " choice
 
-# Filling in and out the input.txt
-ls -a /home/levice/ > input.txt
-cat input.txt
+    case $choice in
+        1) reading_text_file ;;
+        2) adding_number ;;
+        3) file_issuance ;;
+        q) break ;;
+        *) echo "Неверный выбор. Пожалуйста, попробуйте снова."
+    esac
 
-# Launching the program
-./lab2
-
-# Output the result to the console
-cat output.txt
+    read -p "Нажмите enter, чтобы продолжить."
+done

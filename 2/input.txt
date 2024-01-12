@@ -3,11 +3,14 @@
 .bash_history
 .bash_logout
 .bashrc
+.cache
 .config
 .git
 .gitconfig
 Labs
 .local
 .profile
+Projects
+.selected_editor
 .ssh
 .sudo_as_admin_successful
